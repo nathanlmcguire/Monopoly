@@ -2,8 +2,8 @@
 public class Square
 	{
 	private String name, owner;
-	private int location;
-	static String [] board = {"Go", "Mediterranean Ave", "Community Chest", "Baltic Ave", "Income Tax", "Reading RR", "Oriental Ave", "Chance", "Vermont Ave", "Connecticut Ave", "Jail"} ;
+
+	static Square [] board = new Square [40];
 	
 	public String getName()
 		{
@@ -31,4 +31,9 @@ public class Square
 	public static void trade()
 		{
 		}
+	public boolean isPurchaseable()
+		{
+		return false;
+		}
+	
 	}

@@ -4,10 +4,9 @@ public class Card extends Square
 	private String typeOfCard;
 	private String cardContents;
 	
-	public Card (String n, int l, String o, String t, String c)
+	public Card (String n, String o, String t, String c)
 		{
 		setName(n);
-		location = l;
 		setOwner(o);
 		typeOfCard = t;
 		cardContents = c;

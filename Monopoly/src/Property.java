@@ -1,14 +1,13 @@
 
 public class Property extends Square
 	{
-	private int location, cost, rent, costOfHouse, numberOfHouses, rentPerHouse, costOfHotel, hotelRent;
+	private int cost, rent, costOfHouse, numberOfHouses, rentPerHouse, costOfHotel, hotelRent;
 	private boolean hotel = false;
 	private String colorGroup;
 	
-	public Property(String n, int l, String o, String cG, int c, int r, int cH, int nH, int rH, int cHot, int hr, boolean h)
+	public Property(String n, String o, String cG, int c, int r, int cH, int nH, int rH, int cHot, int hr, boolean h)
 		{
 		setName(n);
-		location = l;
 		setOwner(o);
 		colorGroup = cG;
 		cost = c;
@@ -20,6 +19,11 @@ public class Property extends Square
 		hotelRent = hr;
 		}
 
+	public boolean isPurchaseable()
+		{
+		return getOwner() == null;
+		}
+		
 	public int getCost()
 		{
 		return cost;
