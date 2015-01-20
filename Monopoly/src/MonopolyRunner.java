@@ -7,8 +7,6 @@ public class MonopolyRunner
 	public static void main(String[] args) throws IOException
 		{
 		readData();
-//		for (Square s : Square.board)
-//			System.out.println(s);
 		//Player.move(Player.p.getCurrentLocation());
 		}
 	public static void readData() throws IOException
@@ -34,7 +32,6 @@ public class MonopolyRunner
 				int hr = file.nextInt();
 				boolean h = false;
 				String n = file.nextLine();
-				System.out.println("The property is" + n);
 				Square.board[i] = new Property(o, cG, nP, c, r, cH, nH, r1H, r2H, r3H, r4H, hr, h, n);
 				}
 			else if (typeOfSquare.equals("utility"))
@@ -42,7 +39,6 @@ public class MonopolyRunner
 				String o = "none";
 				int nU = 0;
 				String n = file.nextLine();
-				System.out.println("The name is" + n);
 				Square.board[i] = new Utility(o, nU, n);
 				}
 			else if (typeOfSquare.equals("railroad"))
@@ -50,19 +46,21 @@ public class MonopolyRunner
 				String o = "none";
 				int nRR = 0;
 				String n = file.nextLine();
-				System.out.println("The name is" + n);
 				Square.board[i] = new Railroad(o, nRR, n);
 				}
 			else if (typeOfSquare.equals("misc"))
 				{
 				String n = file.nextLine();
-				System.out.println("The name is" + n);
+				Square.board[i] = new Misc(n);
 				}
 			else if (typeOfSquare.equals("card"))
 				{
 				String n = file.nextLine();
+				Square.board[i] = new Card(n);
 				}
 			}
+		for (Square s : Square.board)
+			System.out.println(s);
 		}
 	}
 

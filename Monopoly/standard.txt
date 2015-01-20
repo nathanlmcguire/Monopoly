@@ -20,7 +20,7 @@ property orange 3 180 14 100 70 200 550 750 950 Tennessee Ave
 property orange 3 200 16 100 80 220 600 800 1000 New York Ave
 misc Free Parking
 property red 3 220 1  150 90 250 700 875 1050 Kentucky Ave
-car  Chance
+card Chance
 property red 3 220 18 150 90 250 70  875 1050 Indiana Ave
 property red 3 240 20 150 100 300 750 925 1100 Illinois Ave
 railroad B. & O. RR
