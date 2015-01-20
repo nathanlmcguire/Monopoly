@@ -44,7 +44,7 @@ public class Player
 
 	public void setCurrentLocation(int currentLocation)
 		{
-		this.currentLocation = currentLocation;
+		Player.currentLocation = currentLocation;
 		}
 
 	public static int rollDice()
@@ -57,7 +57,7 @@ public class Player
 	public static int move(int cl)
 		{
 		int dieRoll = rollDice();
-		if (p.getCurrentLocation() + dieRoll < 11)
+		if (p.getCurrentLocation() + dieRoll < 40)
 			{
 			System.out.println("Your current location is on " + Square.board[p.getCurrentLocation()]);
 			p.setCurrentLocation(p.getCurrentLocation() + dieRoll);
@@ -67,7 +67,7 @@ public class Player
 		else
 			{
 			System.out.println("Your current location is on " + Square.board[p.getCurrentLocation()]);
-			p.setCurrentLocation(p.getCurrentLocation() + dieRoll - 11);
+			p.setCurrentLocation(p.getCurrentLocation() + dieRoll - 40);
 			System.out.println("You rolled a " + dieRoll + " and landed on " + Square.board[p.getCurrentLocation()]);
 			System.out.println("You collect $200 for getting to Go.");
 			p.setMoney(p.getMoney() + 200);

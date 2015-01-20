@@ -7,7 +7,12 @@ public class MonopolyRunner
 	public static void main(String[] args) throws IOException
 		{
 		readData();
-		//Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
+		Player.move(Player.p.getCurrentLocation());
 		}
 	public static void readData() throws IOException
 		{
@@ -59,8 +64,6 @@ public class MonopolyRunner
 				Square.board[i] = new Card(n);
 				}
 			}
-		for (Square s : Square.board)
-			System.out.println(s);
 		}
 	}
 
