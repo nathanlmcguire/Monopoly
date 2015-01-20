@@ -1,0 +1,40 @@
+misc Go
+property brown 2 60 2 50 10 30 90 160 250 Mediterranean Ave
+card Community Chest
+property brown 2 60 4 50 20 60 180 320 450 Baltic Ave
+misc Income Tax
+railroad Reading RR
+property lightblue 3 100 6 50 30 90 270 400 550 Oriental Ave
+card Chance
+property lightblue 3 100 6 50 30 90 270 400 550 Vermont Ave
+property lightblue 3 120 8 50 40 100 300 450 600 Connecticut Ave
+misc Jail
+property pink 3 140 10 100 50 150 450 625 750 St. Charles Place
+utility Electric Company
+property pink 3 140 10 100 50 150 450 625 750 States Ave
+property pink 3 160 12 100 60 180 500 700 900 Virginia Ave
+railroad Pennsylvannia RR
+property orange 3 180 14 100 70 200 550 750 950 St. James Place
+card Community Chest
+property orange 3 180 14 100 70 200 550 750 950 Tennessee Ave
+property orange 3 200 16 100 80 220 600 800 1000 New York Ave
+misc Free Parking
+property red 3 220 1  150 90 250 700 875 1050 Kentucky Ave
+car  Chance
+property red 3 220 18 150 90 250 70  875 1050 Indiana Ave
+property red 3 240 20 150 100 300 750 925 1100 Illinois Ave
+railroad B. & O. RR
+property yellow 3 260 22 15  110 330 800 975 1150 Atlantic Ave
+property yellow 3 260 22 150 110 330 800 975 1150 Ventnor Ave
+utility Water Works
+property yellow 3 280 24 150 120 360 850 1025 1200 Marvin Gardens
+misc Go to Jail
+property green 3 300 26 200 13  390 900 1100 1275 Pacific Ave 
+property green 3 30  2  200 13  39  900 1100 1275 North Carolina Ave
+card Community Chest
+property green 3 320 28 200 150 450 1000 1200 1400 Pennsylvannia Ave
+railroad Short Line RR
+card Chance
+property darkblue 2 350 35 200 175 500 1100 1300 1500 Park Place
+misc Luxury Tax
+property darkblue 2 400 50 200 200 600 1400 1700 2000 Boardwalk

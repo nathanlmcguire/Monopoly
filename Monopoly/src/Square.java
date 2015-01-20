@@ -24,6 +24,13 @@ public class Square
 		{
 		this.owner = owner;
 		}
+	
+
+	@Override
+	public String toString()
+		{
+		return "Square [name=" + name + "]";
+		}
 
 	public static void transferMoney()
 		{
