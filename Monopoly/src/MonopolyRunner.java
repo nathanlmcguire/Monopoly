@@ -3,7 +3,6 @@ import java.io.*;
 
 public class MonopolyRunner
 	{
-
 	public static void main(String[] args) throws IOException
 		{
 		readData();
@@ -14,6 +13,7 @@ public class MonopolyRunner
 		Player.move(Player.p.getCurrentLocation());
 		Player.move(Player.p.getCurrentLocation());
 		}
+	
 	public static void readData() throws IOException
 		{
 		Scanner file = new Scanner(new File("standard.txt"));
