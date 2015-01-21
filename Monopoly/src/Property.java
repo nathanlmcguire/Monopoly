@@ -1,7 +1,7 @@
 
 public class Property extends Square
 	{
-	private int numberOfProperties, cost, rent, costOfHouse, numberOfHouses, rent1H, rent2H, rent3H, rent4H, costOfHotel, hotelRent;
+	private int numberOfProperties, rent, costOfHouse, numberOfHouses, rent1H, rent2H, rent3H, rent4H, costOfHotel, hotelRent;
 	private boolean hotel = false;
 	private String colorGroup;
 	
@@ -10,7 +10,7 @@ public class Property extends Square
 		setOwner(o);
 		colorGroup = cG;
 		numberOfProperties = nP;
-		cost = c;
+		setCost(c);
 		rent = r;
 		costOfHouse = cH;
 		numberOfHouses = nH;
@@ -27,11 +27,6 @@ public class Property extends Square
 		return getOwner() == null;
 		}
 		
-	public int getCost()
-		{
-		return cost;
-		}
-
 	public int getRent()
 		{
 		return rent;
@@ -65,11 +60,6 @@ public class Property extends Square
 	public String getColorGroup()
 		{
 		return colorGroup;
-		}
-
-	public void setCost(int cost)
-		{
-		this.cost = cost;
 		}
 
 	public void setRent(int rent)

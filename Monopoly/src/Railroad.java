@@ -3,10 +3,11 @@ public class Railroad extends Square
 	{
 	private static int numberOfRailroads;
 	
-	public Railroad (String o, int nRR, String n)
+	public Railroad (String o, int nRR, int c, String n)
 		{
 		setOwner(o);
 		numberOfRailroads = nRR;
+		setCost(c);
 		setName(n);
 		}
 	

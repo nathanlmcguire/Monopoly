@@ -59,16 +59,18 @@ public class Player
 		int dieRoll = rollDice();
 		if (p.getCurrentLocation() + dieRoll < 40)
 			{
-			System.out.println("Your current location is on " + Square.board[p.getCurrentLocation()]);
+			System.out.println("Your current location is on" + Square.board[p.getCurrentLocation()].getName());
 			p.setCurrentLocation(p.getCurrentLocation() + dieRoll);
-			System.out.println("You rolled a " + dieRoll + " and landed on " + Square.board[p.getCurrentLocation()]);
+			System.out.println("You rolled a " + dieRoll + " and landed on" + Square.board[p.getCurrentLocation()].getName());
+			System.out.println();
 			return p.getCurrentLocation();
 			}
 		else
 			{
 			System.out.println("Your current location is on " + Square.board[p.getCurrentLocation()]);
 			p.setCurrentLocation(p.getCurrentLocation() + dieRoll - 40);
-			System.out.println("You rolled a " + dieRoll + " and landed on " + Square.board[p.getCurrentLocation()]);
+			System.out.println("You rolled a " + dieRoll + " and landed on" + Square.board[p.getCurrentLocation()]);
+			System.out.println();
 			System.out.println("You collect $200 for getting to Go.");
 			p.setMoney(p.getMoney() + 200);
 			System.out.println("Your new cash balance is $" + p.getMoney());

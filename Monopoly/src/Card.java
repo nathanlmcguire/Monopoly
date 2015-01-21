@@ -2,8 +2,9 @@
 public class Card extends Square
 	{
 
-	public Card (String n)
+	public Card (String o, String n)
 		{
+		setOwner(o);
 		setName(n);
 		}
 
