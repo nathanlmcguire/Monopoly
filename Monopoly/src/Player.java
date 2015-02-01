@@ -6,7 +6,7 @@ public class Player
 	private int money;
 	static private int currentLocation;
 	
-	ArrayList <String> inventory = new ArrayList<String>();
+	static ArrayList <String> inventory = new ArrayList<String>();
 	
 	public Player (String n, int m, int cl)
 		{
@@ -76,6 +76,12 @@ public class Player
 			System.out.println("Your new cash balance is $" + p.getMoney());
 			return p.getCurrentLocation();
 			}
+		}
+	
+	public static void displayInventory()
+		{
+		for(String s : inventory)
+			System.out.println(s);
 		}
 
 	}

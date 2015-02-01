@@ -106,9 +106,32 @@ public class Square
 		{
 		if (Square.board[loc].getOwner().equals("none"))
 			{
+			
+			Scanner userInput = new Scanner(System.in);
 			System.out.println("This space in unowned.  The price is $" + Square.board[loc].getCost());
-			System.out.println("You have $" + Player.p.getMoney() + ".  (1) Purchase it  (2) Pass");
+			if (Player.p.getMoney() >= Square.board[loc].getCost())
+				{
+				System.out.println("You have $" + Player.p.getMoney() + ".  (1) Purchase it  (2) Pass");
+				int choice = userInput.nextInt();
+				if (choice == 1)
+					{
+					purchase(loc);
+					}
+				}
+			else System.out.println("I'm sorry, but you do not have enough cash to purchase this.");
 			}
+		}
+	
+	public static void purchase(int loc)
+		{
+		Player.p.setMoney(Player.p.getMoney() - Square.board[loc].getCost());
+		Square.board[loc].setOwner(Player.p.getPlayerName());
+		System.out.println("You have purchased" + Square.board[loc].getName() + ".");
+		System.out.println("You have $" + Player.p.getMoney() + " remaining.");
+		Player.inventory.add(Square.board[loc].getName());
+		System.out.println();
+		System.out.println("You now own the following properties:");
+		Player.displayInventory();
 		}
 
 	public static void transferMoney()

@@ -6,8 +6,12 @@ public class MonopolyRunner
 	public static void main(String[] args) throws IOException
 		{
 		Square.readData();
-		Player.move(Player.p.getCurrentLocation());
-		Square.offerMenu(Player.p.getCurrentLocation());
+		while (Player.p.getMoney() > 0)
+			{
+			Player.move(Player.p.getCurrentLocation());
+			Square.offerMenu(Player.p.getCurrentLocation());
+			}
+
 		}
 	}
 
