@@ -7,6 +7,7 @@ public class Square
 	{
 	private String name, owner;
 	private int cost;
+	static Scanner file;
 	
 	static Square [] board = new Square [40];
 	
@@ -46,9 +47,29 @@ public class Square
 		return "Square [name=" + name + "]";
 		}
 	
+	public static void chooseTheme() throws IOException
+		{
+		System.out.println("Which edition would you like to play?  (1) Classic  (2) Star Wars");
+		Scanner userInput = new Scanner (System.in);
+		int theme = userInput.nextInt();
+		if (theme == 1)
+			{
+			file = new Scanner(new File("classic.txt"));
+			}
+		else if (theme == 2)
+			{
+			file = new Scanner(new File("starWars.txt"));
+			}
+		else
+			{
+			System.out.println("Sorry, but you must choose either (1) or (2)");
+			chooseTheme();
+			}
+		}
+	
 	public static void readData() throws IOException
 		{
-		Scanner file = new Scanner(new File("standard.txt"));
+		//Scanner file = new Scanner(new File("standard.txt"));
 		for (int i = 0; i < 40; i++)
 			{
 			String typeOfSquare = file.next();
