@@ -80,8 +80,10 @@ public class Player
 	
 	public static void displayInventory()
 		{
+		System.out.println();
 		for(String s : inventory)
 			System.out.println(s);
+		System.out.println();
 		}
 
 	}
