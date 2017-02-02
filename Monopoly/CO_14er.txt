@@ -1,0 +1,40 @@
+misc Trailhead
+property brown 2 60 2 50 10 30 90 160 250 Mt. Sherman
+card Trail Fortune
+property brown 2 60 4 50 20 60 180 320 450 Quandary Peak
+misc CO Fourteeners Initiative
+railroad 200 LittleBear-Blanca 14er Traverse
+property lightblue 3 100 6 50 30 90 270 400 550 Mt. Bierstadt
+card Go for an Adventure
+property lightblue 3 100 6 50 30 90 270 400 550 Torreys Peak
+property lightblue 3 120 8 50 40 100 300 450 600 Grays Peak
+misc Basecamp
+property pink 3 140 10 100 50 150 450 625 750 Mt. Yale
+utility 75 Pikes Peak (14er Toll Road)
+property pink 3 140 10 100 50 150 450 625 750 Mt. Princeton
+property pink 3 160 12 100 60 180 500 700 900 Mt. Harvard
+railroad 200 Crestones 14er Traverse
+property orange 3 180 14 100 70 200 550 750 950 Humboldt Peak
+card Trail Fortune
+property orange 3 180 14 100 70 200 550 750 950 Mt. Lindsey
+property orange 3 200 16 100 80 220 600 800 1000 Kit Carson Peak
+misc Scenic Viewpoint
+property red 3 220 1  150 90 250 700 875 1050 Mt. Sneffels
+card Go for an Adventure
+property red 3 220 18 150 90 250 70  875 1050 Uncompahgre Peak
+property red 3 240 20 150 100 300 750 925 1100 Mt. Eolus
+railroad 200 Wilson-El Diente 14er Traverse
+property yellow 3 260 22 15  110 330 800 975 1150 Mount of the Holy Cross
+property yellow 3 260 22 150 110 330 800 975 1150 Mt. Massive
+utility 75 Mt. Evans (14er Toll Road)
+property yellow 3 280 24 150 120 360 850 1025 1200 Mt. Elbert
+misc Go to Basecamp
+property green 3 300 26 200 13  390 900 1100 1275 Castle Peak
+property green 3 30  2  200 13  39  900 1100 1275 Snowmass Mountain
+card Trail Fortune
+property green 3 320 28 200 150 450 1000 1200 1400 Pyramid Peak
+railroad 200 Maroon Bells 14er Traverse
+card Go for an Adventure
+property darkblue 2 350 35 200 175 500 1100 1300 1500 Longs Peak
+misc You Lost a Boot
+property darkblue 2 400 50 200 200 600 1400 1700 2000 Capitol Peak
