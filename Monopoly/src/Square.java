@@ -51,12 +51,12 @@ public class Square
 		{
 		System.out.println("Which edition would you like to play?  (1) Classic  (2) CO 14er");
 		Scanner userInput = new Scanner (System.in);
-		int theme = userInput.nextInt();
-		if (theme == 1)
+		int edition = userInput.nextInt();
+		if (edition == 1)
 			{
 			file = new Scanner(new File("classic.txt"));
 			}
-		else if (theme == 2)
+		else if (edition == 2)
 			{
 			file = new Scanner(new File("CO_14er.txt"));
 			}
