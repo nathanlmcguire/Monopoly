@@ -5,6 +5,7 @@ public class MonopolyRunner
 	{
 	public static void main(String[] args) throws IOException
 		{
+		//THE ONE TRUE MCGUIRE
 		Square.chooseTheme();
 		Square.readData();
 		while (Player.p.getMoney() > 0)
